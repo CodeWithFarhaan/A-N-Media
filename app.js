@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const port = process.env.PORT || 3000;
+const userModel = require('./models/user.js');
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -31,6 +33,16 @@ app.get("/service.html", (req, res) => {
 
 app.get("/contact.html", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "contact.html"));
+});
+
+app.post("/userdetails", async (req, res) => {
+  let {name, email, message} = req.body;
+  const userCreated = await userModel.create({
+    name,
+    email,
+    message
+  });
+  res.send(userCreated);
 });
 
 app.listen(port, () => {
