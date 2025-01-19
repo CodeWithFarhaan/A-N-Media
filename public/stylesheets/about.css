@@ -1,0 +1,54 @@
+.ab-title-xs {
+  text-align: center;
+}
+
+.ab-title-p {
+  text-align: center;
+}
+
+.tp-inner-list ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tp-testimonial-three__user-content {
+  position: relative;
+  bottom: 30px;
+}
+
+.tp-case-active {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between rows */
+}
+
+.tp-case-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between images */
+}
+
+.tp-case-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.testimonial-slide-wrapper {
+  display: flex;
+  flex-direction: column; /* Stacks rows vertically */
+  align-items: center; /* Centers rows horizontally */
+  gap: 20px; /* Spacing between rows */
+}
+
+.testimonial-row {
+  display: flex;
+  justify-content: center; /* Centers testimonials in a row */
+  gap: 20px; /* Spacing between testimonials */
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.tp-testimonial-three {
+  flex: 1 1 calc(50% - 40px); /* Each testimonial takes 50% of the row minus gap */
+  max-width: 500px; /* Maximum width for each testimonial */
+  min-width: 300px; /* Ensures testimonials don't shrink too small */
+}

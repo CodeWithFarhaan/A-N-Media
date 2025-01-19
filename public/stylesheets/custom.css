@@ -1,0 +1,37 @@
+.tp-hero-area {
+  background: linear-gradient(60deg, #800080, #0000ff, #f0f0f0);
+}
+
+.tp-brand-title {
+  font-size: 80px;
+  text-align: center;
+  position: relative;
+  top: -59px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.tp-case-area {
+  background: linear-gradient(70deg, #800080, #0000ff, #f0f0f0);
+}
+
+nav li {
+  color: aliceblue;
+}
+footer {
+  margin-top: -143px;
+}
+
+.txt {
+  color: white;
+}
+
+.txt-t {
+  color: aliceblue;
+}
+
+.ser-item{
+  position: relative;
+  top: 20px;
+}
+
