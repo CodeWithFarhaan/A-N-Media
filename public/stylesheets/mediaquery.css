@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px) {
+    .tp-header-right {
+        position: relative;
+        border-bottom: 1px solid rgba(236, 224, 224, 0.5); /* Adds the horizontal line */
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .tp-logo {
+        position: absolute;
+        top: 10px;
+        left: 10px; /* Move logo to the left */
+        padding: 0;
+    }
+    
+    .tp-logo img {
+        width: 80px; /* Adjust logo size */
+        height: auto;
+    }
+
+    .tp-header-right {
+        position: absolute;
+        top: 0px;
+        right: 10px; /* Keep menu on the right */
+    }
+
+    .tp-header-right .tp-menu-bar {
+        position: absolute;
+        top: 10px;
+        right: 10px; /* Ensure hamburger icon stays on the right */
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tp-logo img {
+        width: 60px; /* Reduce logo size for smaller screens */
+    }
+
+    .tp-header-right .tp-menu-bar {
+        font-size: 18px;
+    }
+}
